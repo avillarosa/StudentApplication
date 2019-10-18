@@ -32,7 +32,7 @@ public class SummaryLVActivity extends Activity {
         // Creating Adam Student object
         Student s = new Student("Adam", "Villarosa", 80311);
         ArrayList<CourseEnrollment> courses = new ArrayList<CourseEnrollment>();
-        courses.add(new CourseEnrollment("12345", "A"));
+        courses.add(new CourseEnrollment("CPSC256", "A"));
         s.setCourses(courses);
         ArrayList<Student> studentList = new ArrayList<Student>();
         studentList.add(s);
@@ -40,7 +40,7 @@ public class SummaryLVActivity extends Activity {
         // Creating Alan Student object
         s = new Student("Alan", "Newsie", 209345);
         courses = new ArrayList<CourseEnrollment>();
-        courses.add(new CourseEnrollment("5695869", "C+"));
+        courses.add(new CourseEnrollment("CPSC411", "C+"));
         s.setCourses(courses);
         studentList.add(s);
 

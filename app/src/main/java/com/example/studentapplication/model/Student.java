@@ -1,5 +1,7 @@
 package com.example.studentapplication.model;
 
+import android.widget.TextView;
+
 import java.util.ArrayList;
 
 public class Student {
