@@ -58,8 +58,22 @@ public class SummaryLVActivity extends Activity {
         s.setCourses(courses);
         studentList.add(s);
 
-        // Creating Jim Student object
+        // Creating Dwight Student object
         s = new Student("Dwight", "Shrute", 198384);
+        courses = new ArrayList<CourseEnrollment>();
+        courses.add(new CourseEnrollment("CPSC411", "C+"));
+        s.setCourses(courses);
+        studentList.add(s);
+
+        // Creating Michael Student object
+        s = new Student("Michael", "Scott", 958371);
+        courses = new ArrayList<CourseEnrollment>();
+        courses.add(new CourseEnrollment("CPSC411", "C+"));
+        s.setCourses(courses);
+        studentList.add(s);
+
+        // Creating Pam Student object
+        s = new Student("Pam", "Beesly", 496011);
         courses = new ArrayList<CourseEnrollment>();
         courses.add(new CourseEnrollment("CPSC411", "C+"));
         s.setCourses(courses);
