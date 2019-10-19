@@ -43,6 +43,7 @@ public class SummaryLVAdapter extends BaseAdapter {
 
         Student s = StudentDB.getInstance().getStudents().get(i);
 
+        // id's coming from student_row.xml
         TextView firstNameView = (TextView) row_view.findViewById(R.id.first_name);
         firstNameView.setText(s.getFirstName());
         TextView lastNameView = (TextView) row_view.findViewById(R.id.last_name);
