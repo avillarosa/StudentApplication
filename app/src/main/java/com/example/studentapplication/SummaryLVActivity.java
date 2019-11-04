@@ -2,6 +2,7 @@ package com.example.studentapplication;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 
 import com.example.studentapplication.adapter.SummaryLVAdapter;
@@ -13,7 +14,9 @@ import java.util.ArrayList;
 
 public class SummaryLVActivity extends Activity {
 
+    protected final String TAG = "Summary Screen";
     protected ListView mSummaryView;
+    SummaryLVAdapter ad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +26,12 @@ public class SummaryLVActivity extends Activity {
 
         createStudentObjects();
         mSummaryView = findViewById(R.id.summary_list_view_id);
-        SummaryLVAdapter ad = new SummaryLVAdapter();
+        ad = new SummaryLVAdapter();
         mSummaryView.setAdapter(ad);
 
     }
+
+
 
     protected void createStudentObjects() {
         // Creating Adam Student object
@@ -83,4 +88,37 @@ public class SummaryLVActivity extends Activity {
         //
         StudentDB.getInstance().setStudents(studentList);
     }
+
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause() called");
+        super.onPause();
+    }
+
+    @Override
+    protected void onStart() {
+        Log.d(TAG, "onStart() called");
+        ad.notifyDataSetChanged();
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.d(TAG, "onStop() called");
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d(TAG, "onResume() called");
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d(TAG, "onDestroy() called");
+        super.onDestroy();
+    }
+
 }

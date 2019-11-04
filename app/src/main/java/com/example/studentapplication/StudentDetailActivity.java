@@ -1,6 +1,7 @@
 package com.example.studentapplication;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
@@ -17,6 +18,7 @@ import com.example.studentapplication.model.StudentDB;
 
 public class StudentDetailActivity extends AppCompatActivity {
 
+    protected final String TAG = "Detail Screen";
     protected Menu detailMenu;
     protected int studentIndex;
 
@@ -34,6 +36,8 @@ public class StudentDetailActivity extends AppCompatActivity {
         EditText cNameView = (EditText) findViewById(R.id.cwid_val_id);
         fNameView.setText(sObj.getFirstName());
         lNameView.setText(sObj.getLastName());
+        fNameView.setEnabled(false);
+        lNameView.setEnabled(false);
         cNameView.setText(String.valueOf(sObj.getCwid()));
 
         // 2. Populate the CourseEnrollment List
@@ -78,4 +82,34 @@ public class StudentDetailActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    @Override
+    protected void onStart() {
+        Log.d(TAG, "onStart() called");
+        super.onStart();
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause() called");
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.d(TAG, "onStop() called");
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d(TAG, "onResume() called");
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d(TAG, "onDestroy() called");
+        super.onDestroy();
+    }
+
 }
