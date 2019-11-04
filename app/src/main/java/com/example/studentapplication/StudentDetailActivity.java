@@ -37,6 +37,15 @@ public class StudentDetailActivity extends AppCompatActivity {
         cNameView.setText(String.valueOf(sObj.getCwid()));
 
         // 2. Populate the CourseEnrollment List
+        EditText coursesIdView = (EditText) findViewById(R.id.courses_id_detail);
+        EditText gradeView = (EditText) findViewById(R.id.grades_id_detail);
+        ArrayList<CourseEnrollment> aList = sObj.getCourses();
+        for (int i = 0; i < aList.size(); i++) {
+            coursesIdView.setText(coursesIdView.getText() + "" + aList.get(i).getCourseID() + ", ");
+            gradeView.setText(gradeView.getText() + "" + aList.get(i).getGrade() + ", ");
+        }
+
+
      }
 
     @Override

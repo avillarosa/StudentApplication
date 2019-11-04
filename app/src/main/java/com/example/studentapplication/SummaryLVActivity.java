@@ -33,6 +33,7 @@ public class SummaryLVActivity extends Activity {
         Student s = new Student("Adam", "Villarosa", 803111);
         ArrayList<CourseEnrollment> courses = new ArrayList<CourseEnrollment>();
         courses.add(new CourseEnrollment("CPSC256", "A"));
+        courses.add(new CourseEnrollment("CPSC254", "A-"));
         s.setCourses(courses);
         ArrayList<Student> studentList = new ArrayList<Student>();
         studentList.add(s);

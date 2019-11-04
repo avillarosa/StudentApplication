@@ -32,6 +32,20 @@
                 android:gravity="center_vertical"
                 android:layout_weight="1"
                 android:text="CWID: "/>
+            <TextView
+                android:id="@+id/courses_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Courses:"/>
+            <TextView
+                android:id="@+id/grades_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Grades:"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -50,13 +64,18 @@
                 android:id="@+id/cwid_val_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/courses_id_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/grades_id_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
+
     </LinearLayout>
-    <TextView
-        android:id="@+id/courses_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Courses:"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
