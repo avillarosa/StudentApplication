@@ -13,7 +13,7 @@ import com.example.studentapplication.model.Student;
 import com.example.studentapplication.model.StudentDB;
 
 public class SummaryLVAdapter extends BaseAdapter {
-    protected int count;
+    //protected int count;
 
     @Override
     public int getCount() {
@@ -35,7 +35,7 @@ public class SummaryLVAdapter extends BaseAdapter {
         View row_view;
 
         if(view == null) {
-            count++;
+            //count++;
             LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
             row_view = inflater.inflate(R.layout.student_row, viewGroup, false);
         }

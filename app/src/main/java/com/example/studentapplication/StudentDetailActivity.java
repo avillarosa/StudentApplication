@@ -45,11 +45,9 @@ public class StudentDetailActivity extends AppCompatActivity {
         EditText gradeView = (EditText) findViewById(R.id.grades_id_detail);
         ArrayList<CourseEnrollment> aList = sObj.getCourses();
         for (int i = 0; i < aList.size(); i++) {
-            coursesIdView.setText(coursesIdView.getText() + "" + aList.get(i).getCourseID() + ", ");
-            gradeView.setText(gradeView.getText() + "" + aList.get(i).getGrade() + ", ");
+            coursesIdView.setText(coursesIdView.getText() + "" + aList.get(i).getCourseID() + " ");
+            gradeView.setText(gradeView.getText() + "" + aList.get(i).getGrade() + " ");
         }
-
-
      }
 
     @Override
