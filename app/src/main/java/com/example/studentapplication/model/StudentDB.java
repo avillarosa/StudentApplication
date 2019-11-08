@@ -1,8 +1,16 @@
 package com.example.studentapplication.model;
 
-import java.util.ArrayList;
+import android.view.Menu;
+import android.view.MenuItem;
 
-public class StudentDB {
+import androidx.annotation.NonNull;
+
+import com.example.studentapplication.R;
+
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class StudentDB extends ArrayList<Student> {
     private static final StudentDB ourInstance = new StudentDB();
 
     protected ArrayList<Student> mStudents;
@@ -77,4 +85,5 @@ public class StudentDB {
         //
         //StudentDB.getInstance().setStudents(studentList);
     }
+
 }

@@ -12,6 +12,9 @@
         <activity android:name=".StudentDetailActivity"
             android:parentActivityName=".SummaryLVActivity">
         </activity>
+        <activity android:name=".CreateStudentActivity"
+            android:parentActivityName=".SummaryLVActivity">
+        </activity>
         <activity android:name=".SummaryLVActivity"
             android:launchMode="singleTop">
             <intent-filter>
